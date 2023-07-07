@@ -8,6 +8,7 @@ const REACTIONS = ['+1', '-1', 'laugh', 'confused', 'heart', 'hooray', 'rocket',
 type Reaction = (typeof REACTIONS)[number];
 
 async function run() {
+  core.info("hello world")
   try {
     const message: string = core.getInput('message');
     const filePath: string = core.getInput('filePath');
