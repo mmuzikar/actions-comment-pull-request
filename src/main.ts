@@ -121,6 +121,7 @@ async function run() {
     await addReactions(comment.id, reactions);
   } catch (error) {
     if (error instanceof Error) {
+      core.debug(JSON.stringify(error))
       core.setFailed(error.message);
     }
   }
